@@ -1,0 +1,12 @@
+R_DEF: Internal format may change without notice
+local
+color ic_launcher_background
+drawable ic_launcher_foreground
+drawable ic_shield
+drawable ic_stop
+mipmap ic_launcher
+string app_name
+style Theme.GuardApp
+style Theme.GuardApp.Fullscreen
+xml backup_rules
+xml data_extraction_rules

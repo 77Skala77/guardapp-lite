@@ -1,0 +1,4 @@
+com.guardapp.test.app-androidTest-0 /Users/garuda/Desktop/files/GuardAppLite/app/build/generated/res/resValues/androidTest/debug
+com.guardapp.test.app-mergeDebugAndroidTestResources-1 /Users/garuda/Desktop/files/GuardAppLite/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.guardapp.test.app-mergeDebugAndroidTestResources-2 /Users/garuda/Desktop/files/GuardAppLite/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.guardapp.test.app-debugAndroidTest-3 /Users/garuda/Desktop/files/GuardAppLite/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

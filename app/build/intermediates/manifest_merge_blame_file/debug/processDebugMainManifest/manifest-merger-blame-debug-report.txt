@@ -1,0 +1,246 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.guardapp.lite"
+4    android:versionCode="1"
+5    android:versionName="0.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Foreground service: захват экрана -->
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:6:5-77
+12-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:6:22-74
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+13-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:7:5-94
+13-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:7:22-91
+14    <!-- Overlay сервис: воспроизведение медиа-якоря -->
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+15-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:9:5-92
+15-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:9:22-89
+16
+17    <!-- Overlay поверх других приложений -->
+18    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+18-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:12:5-78
+18-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:12:22-75
+19
+20    <!-- Уведомление сервиса (Android 13+) -->
+21    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+21-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:15:5-77
+21-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:15:22-74
+22
+23    <!-- Audio focus -->
+24    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+24-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:18:5-80
+24-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:18:22-77
+25
+26    <!-- Медиа для Экрана Просветления -->
+27    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+27-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:21:5-75
+27-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:21:22-72
+28    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+28-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:22:5-76
+28-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:22:22-73
+29    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+29-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:23:5-75
+29-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:23:22-72
+30    <uses-permission
+30-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:24:5-25:38
+31        android:name="android.permission.READ_EXTERNAL_STORAGE"
+31-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:24:22-77
+32        android:maxSdkVersion="32" />
+32-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:25:9-35
+33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+33-->[androidx.media3:media3-common:1.2.1] /Users/garuda/.gradle/caches/8.9/transforms/4c2bd9ae12c69dfacfdc9705b9772105/transformed/media3-common-1.2.1/AndroidManifest.xml:22:5-79
+33-->[androidx.media3:media3-common:1.2.1] /Users/garuda/.gradle/caches/8.9/transforms/4c2bd9ae12c69dfacfdc9705b9772105/transformed/media3-common-1.2.1/AndroidManifest.xml:22:22-76
+34
+35    <permission
+35-->[androidx.core:core:1.12.0] /Users/garuda/.gradle/caches/8.9/transforms/b36ad144ebf0dc6ab50b8acd9c1f30b3/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+36        android:name="com.guardapp.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+36-->[androidx.core:core:1.12.0] /Users/garuda/.gradle/caches/8.9/transforms/b36ad144ebf0dc6ab50b8acd9c1f30b3/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+37        android:protectionLevel="signature" />
+37-->[androidx.core:core:1.12.0] /Users/garuda/.gradle/caches/8.9/transforms/b36ad144ebf0dc6ab50b8acd9c1f30b3/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+38
+39    <uses-permission android:name="com.guardapp.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+39-->[androidx.core:core:1.12.0] /Users/garuda/.gradle/caches/8.9/transforms/b36ad144ebf0dc6ab50b8acd9c1f30b3/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+39-->[androidx.core:core:1.12.0] /Users/garuda/.gradle/caches/8.9/transforms/b36ad144ebf0dc6ab50b8acd9c1f30b3/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+40
+41    <application
+41-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:27:5-73:19
+42        android:name="com.guardapp.GuardApp"
+42-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:28:9-33
+43        android:allowBackup="false"
+43-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:29:9-36
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.12.0] /Users/garuda/.gradle/caches/8.9/transforms/b36ad144ebf0dc6ab50b8acd9c1f30b3/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+45        android:dataExtractionRules="@xml/data_extraction_rules"
+45-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:30:9-65
+46        android:debuggable="true"
+47        android:extractNativeLibs="false"
+48        android:fullBackupContent="@xml/backup_rules"
+48-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:31:9-54
+49        android:icon="@mipmap/ic_launcher"
+49-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:32:9-43
+50        android:label="@string/app_name"
+50-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:33:9-41
+51        android:roundIcon="@mipmap/ic_launcher"
+51-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:34:9-48
+52        android:supportsRtl="true"
+52-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:35:9-35
+53        android:theme="@style/Theme.GuardApp" >
+53-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:36:9-46
+54        <activity
+54-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:39:9-47:20
+55            android:name="com.guardapp.MainActivity"
+55-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:40:13-41
+56            android:exported="true"
+56-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:41:13-36
+57            android:label="@string/app_name" >
+57-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:42:13-45
+58            <intent-filter>
+58-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:43:13-46:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:44:17-69
+59-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:44:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:45:17-77
+61-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:45:27-74
+62            </intent-filter>
+63        </activity>
+64
+65        <!-- AnchorActivity остаётся только как fallback для теста из IDE -->
+66        <activity
+66-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:50:9-58:64
+67            android:name="com.guardapp.AnchorActivity"
+67-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:51:13-43
+68            android:excludeFromRecents="true"
+68-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:55:13-46
+69            android:exported="false"
+69-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:52:13-37
+70            android:launchMode="singleInstance"
+70-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:53:13-48
+71            android:showWhenLocked="true"
+71-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:56:13-42
+72            android:taskAffinity=""
+72-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:54:13-36
+73            android:theme="@style/Theme.GuardApp.Fullscreen"
+73-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:58:13-61
+74            android:turnScreenOn="true" />
+74-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:57:13-40
+75
+76        <!-- Foreground service: захват + анализ экрана -->
+77        <service
+77-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:61:9-64:63
+78            android:name="com.guardapp.service.ScreenAnalysisService"
+78-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:62:13-58
+79            android:exported="false"
+79-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:63:13-37
+80            android:foregroundServiceType="mediaProjection" />
+80-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:64:13-60
+81
+82        <!--
+83             Overlay service: WindowManager overlay + медиа-якорь.
+84             НЕ убирается Home-кнопкой.
+85        -->
+86        <service
+86-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:68:9-71:61
+87            android:name="com.guardapp.service.AnchorOverlayService"
+87-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:69:13-57
+88            android:exported="false"
+88-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:70:13-37
+89            android:foregroundServiceType="mediaPlayback" />
+89-->/Users/garuda/Desktop/files/GuardAppLite/app/src/main/AndroidManifest.xml:71:13-58
+90
+91        <activity
+91-->[androidx.compose.ui:ui-test-manifest:1.6.8] /Users/garuda/.gradle/caches/8.9/transforms/5b209a627f6088866874bab8f4c0bd88/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:23:9-25:39
+92            android:name="androidx.activity.ComponentActivity"
+92-->[androidx.compose.ui:ui-test-manifest:1.6.8] /Users/garuda/.gradle/caches/8.9/transforms/5b209a627f6088866874bab8f4c0bd88/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:24:13-63
+93            android:exported="true" />
+93-->[androidx.compose.ui:ui-test-manifest:1.6.8] /Users/garuda/.gradle/caches/8.9/transforms/5b209a627f6088866874bab8f4c0bd88/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:25:13-36
+94
+95        <provider
+95-->[androidx.emoji2:emoji2:1.3.0] /Users/garuda/.gradle/caches/8.9/transforms/7e2f124d15ad548342ca5d4a557d940d/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+96            android:name="androidx.startup.InitializationProvider"
+96-->[androidx.emoji2:emoji2:1.3.0] /Users/garuda/.gradle/caches/8.9/transforms/7e2f124d15ad548342ca5d4a557d940d/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+97            android:authorities="com.guardapp.lite.androidx-startup"
+97-->[androidx.emoji2:emoji2:1.3.0] /Users/garuda/.gradle/caches/8.9/transforms/7e2f124d15ad548342ca5d4a557d940d/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+98            android:exported="false" >
+98-->[androidx.emoji2:emoji2:1.3.0] /Users/garuda/.gradle/caches/8.9/transforms/7e2f124d15ad548342ca5d4a557d940d/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+99            <meta-data
+99-->[androidx.emoji2:emoji2:1.3.0] /Users/garuda/.gradle/caches/8.9/transforms/7e2f124d15ad548342ca5d4a557d940d/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+100                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+100-->[androidx.emoji2:emoji2:1.3.0] /Users/garuda/.gradle/caches/8.9/transforms/7e2f124d15ad548342ca5d4a557d940d/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+101                android:value="androidx.startup" />
+101-->[androidx.emoji2:emoji2:1.3.0] /Users/garuda/.gradle/caches/8.9/transforms/7e2f124d15ad548342ca5d4a557d940d/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+102            <meta-data
+102-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/garuda/.gradle/caches/8.9/transforms/226a6cb76d5a6782ff2f1b42dc39a0b4/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+103                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+103-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/garuda/.gradle/caches/8.9/transforms/226a6cb76d5a6782ff2f1b42dc39a0b4/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+104                android:value="androidx.startup" />
+104-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/garuda/.gradle/caches/8.9/transforms/226a6cb76d5a6782ff2f1b42dc39a0b4/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+105            <meta-data
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+106                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+107                android:value="androidx.startup" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+108        </provider>
+109
+110        <activity
+110-->[androidx.compose.ui:ui-tooling-android:1.6.8] /Users/garuda/.gradle/caches/8.9/transforms/28a6cdec282ddbb07d174870c7523c61/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+111            android:name="androidx.compose.ui.tooling.PreviewActivity"
+111-->[androidx.compose.ui:ui-tooling-android:1.6.8] /Users/garuda/.gradle/caches/8.9/transforms/28a6cdec282ddbb07d174870c7523c61/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+112            android:exported="true" />
+112-->[androidx.compose.ui:ui-tooling-android:1.6.8] /Users/garuda/.gradle/caches/8.9/transforms/28a6cdec282ddbb07d174870c7523c61/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+113
+114        <service
+114-->[androidx.room:room-runtime:2.6.1] /Users/garuda/.gradle/caches/8.9/transforms/d7e5d5897b22f5b7241569f9b5cbe6f3/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+115            android:name="androidx.room.MultiInstanceInvalidationService"
+115-->[androidx.room:room-runtime:2.6.1] /Users/garuda/.gradle/caches/8.9/transforms/d7e5d5897b22f5b7241569f9b5cbe6f3/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+116            android:directBootAware="true"
+116-->[androidx.room:room-runtime:2.6.1] /Users/garuda/.gradle/caches/8.9/transforms/d7e5d5897b22f5b7241569f9b5cbe6f3/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+117            android:exported="false" />
+117-->[androidx.room:room-runtime:2.6.1] /Users/garuda/.gradle/caches/8.9/transforms/d7e5d5897b22f5b7241569f9b5cbe6f3/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+118
+119        <receiver
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+120            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+121            android:directBootAware="false"
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+122            android:enabled="true"
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+123            android:exported="true"
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+124            android:permission="android.permission.DUMP" >
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+125            <intent-filter>
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+126                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+127            </intent-filter>
+128            <intent-filter>
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+129                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+130            </intent-filter>
+131            <intent-filter>
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+132                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+133            </intent-filter>
+134            <intent-filter>
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+135                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/garuda/.gradle/caches/8.9/transforms/f788d8486d4deb7115adceabf95c70e9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+136            </intent-filter>
+137        </receiver>
+138    </application>
+139
+140</manifest>
