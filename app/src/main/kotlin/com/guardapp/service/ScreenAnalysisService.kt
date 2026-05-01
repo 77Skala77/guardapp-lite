@@ -229,12 +229,12 @@ class ScreenAnalysisService : Service() {
             bitmap.recycle()  // освобождаем bitmap
 
             if (result.isAboveThreshold) {
-                Log.i(TAG, "🚨 NSFW обнаружен: score=${result.score}")
-
                 val sensitivity = settings.sensitivity.first()
+                Log.i(TAG, "🚨 NSFW: score=${result.score} safe=${result.safeScore} " +
+                    "top=${result.topClass}(${result.topProb}) threshold=${sensitivity.threshold}")
+
                 val anchorConfig = settings.anchorConfig.first()
 
-                // Записываем в журнал
                 val entryId = eventLog.append(LogEntry(
                     eventType = "triggered",
                     sensitivity = sensitivity.name,
@@ -242,7 +242,6 @@ class ScreenAnalysisService : Service() {
                     anchorType = anchorConfig.type.name
                 ))
 
-                // Запускаем Экран Просветления
                 anchorIsActive = true
                 triggerAnchor(entryId)
             }

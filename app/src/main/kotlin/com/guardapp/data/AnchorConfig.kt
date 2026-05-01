@@ -24,9 +24,9 @@ enum class AnchorType(val displayName: String) {
  * Чувствительность NSFW-модели.
  */
 enum class Sensitivity(val displayName: String, val threshold: Float) {
-    SOFT("Мягче", 0.93f),
-    BALANCED("Баланс", 0.85f),
-    STRICT("Строже", 0.70f);
+    SOFT("Мягче", 0.75f),      // nsfwScore = hentai+porn+sexy >= 0.75
+    BALANCED("Баланс", 0.60f), // nsfwScore >= 0.60
+    STRICT("Строже", 0.45f);   // nsfwScore >= 0.45 (больше срабатываний)
 
     val warning: String?
         get() = when (this) {

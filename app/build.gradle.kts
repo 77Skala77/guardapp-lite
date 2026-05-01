@@ -85,7 +85,7 @@ dependencies {
 
     // TensorFlow Lite (NSFW-модель; без модели работает заглушка)
     implementation("org.tensorflow:tensorflow-lite:2.14.0")
-    implementation("org.tensorflow:tensorflow-lite-support:0.4.4")
+    // tensorflow-lite-support не используется — детектор работает через чистый Interpreter
 
     // Coil — безопасная загрузка изображений с downsampling и EXIF
     implementation("io.coil-kt:coil-compose:2.7.0")
